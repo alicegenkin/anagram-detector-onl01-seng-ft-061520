@@ -17,7 +17,7 @@ class Anagram
   end
 
   def match(array_of_words)
-    array_of_words.each {|word| word.split('').sort}
+    array_of_words.select {|word| word.split('').sort}
     
     #for each word in array of words split word into an array then alphabetize then check if equal
     end
